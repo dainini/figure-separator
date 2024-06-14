@@ -6,7 +6,7 @@
 
 ## Important Note
 
-**The original code (https://github.com/apple2373/figure-separator) was written for TensorFlow 1.0. This repository includes slight modifications to ensure compatibility with TensorFlow 2.0.**
+**The original code (https://github.com/apple2373/figure-separator) was written for TensorFlow 1. This repository includes slight modifications to ensure compatibility with TensorFlow 2.**
 
 ---
 

@@ -14,7 +14,7 @@
 ```
 pip install tensorflow==2.11.0
 #pip instal tensorflow-gpu==2.11.0 #in case you want to use GPU
-conda install -c conda-forge opencv=3.4.2
+conda install -c conda-forge opencv=3.4.2 #python=3.7x
 ```
 
 ## Citation

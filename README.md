@@ -2,15 +2,22 @@
 - [Data Driven Approach for Compound Figure Separation Using Convolutional Neural Networks](http://vision.soic.indiana.edu/figure-separator/ )
 - This repository contains an implementation of compound figure separator using a covolutional neral network (CNN). 
 
+---
+
+## Important Note
+
+**The original code (https://github.com/apple2373/figure-separator) was written for TensorFlow 1.0. This repository includes slight modifications to ensure compatibility with TensorFlow 2.0.**
+
+---
+
 ## Requirements
 - tensorflow 1.0  https://www.tensorflow.org 
 - opencv 3 http://opencv.org   
 If you are new, I strongly recoomend [Anaconda](https://www.continuum.io/downloads) and then install tensorflow and opencv.
 ```
-pip install tensorflow
-#pip instal tensorflow-gpu #in case you want to use GPU
-conda uninstall -c menpo opencv #in case you have opnecv2
-conda install -c menpo opencv3
+pip install tensorflow==2.11.0
+#pip instal tensorflow-gpu==2.11.0 #in case you want to use GPU
+conda install -c conda-forge opencv=3.4.2
 ```
 
 ## Citation
@@ -27,7 +34,6 @@ If you find this tool useful, please consider to cite:
 ## Another requirement: pretrained model
 Let's donwload the pretrained model at the `./data` directory. I uploaded onto multiple places.  
 - Hugging Face: [https://huggingface.co/apple2373/figure-sepration-model-submitted-544/blob/main/figure-sepration-model-submitted-544.pb](https://huggingface.co/apple2373/figure-sepration-model-submitted-544/blob/main/figure-sepration-model-submitted-544.pb)
-- Dropbox: [https://www.dropbox.com/s/xug7uw1rrq7ljy0/figure-sepration-model-submitted-544.pb?dl=0](https://www.dropbox.com/s/xug7uw1rrq7ljy0/figure-sepration-model-submitted-544.pb?dl=0)
 
 
 ## I just want to separate compound figures. 

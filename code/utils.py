@@ -6,15 +6,14 @@ author:satoshi tsutsui
 utilities
 '''
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import sys
-# sys.path.insert(0, './')
 import numpy as np
 import math
 import cv2
 import os
-from box import BoundBox, box_iou, prob_compare
-from box import prob_compare2, box_intersection
+from .box import BoundBox, box_iou, prob_compare, prob_compare2, box_intersection
 import argparse
 
 def expit(x):
@@ -118,7 +117,7 @@ def preprocess(img_path,w=544,h=544):
 
 def load_graph(frozen_graph_filename):
     #citation: code is taken from https://blog.metaflow.fr/tensorflow-how-to-freeze-a-model-and-serve-it-with-a-python-api-d4f3596b3adc#.137byfk9k
-    with tf.gfile.GFile(frozen_graph_filename, "rb") as f:
+    with tf.io.gfile.GFile(frozen_graph_filename, "rb") as f:
         graph_def = tf.GraphDef()
         graph_def.ParseFromString(f.read())
     with tf.Graph().as_default() as graph:

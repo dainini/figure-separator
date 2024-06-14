@@ -1,7 +1,3 @@
-# Compound Figure Separator
-- [Data Driven Approach for Compound Figure Separation Using Convolutional Neural Networks](http://vision.soic.indiana.edu/figure-separator/ )
-- This repository contains an implementation of compound figure separator using a covolutional neral network (CNN). 
-
 ---
 
 ## Important Note
@@ -10,10 +6,11 @@
 
 ---
 
+# Compound Figure Separator
+- [Data Driven Approach for Compound Figure Separation Using Convolutional Neural Networks](http://vision.soic.indiana.edu/figure-separator/ )
+- This repository contains an implementation of compound figure separator using a covolutional neral network (CNN). 
+
 ## Requirements
-- tensorflow 1.0  https://www.tensorflow.org 
-- opencv 3 http://opencv.org   
-If you are new, I strongly recoomend [Anaconda](https://www.continuum.io/downloads) and then install tensorflow and opencv.
 ```
 pip install tensorflow==2.11.0
 #pip instal tensorflow-gpu==2.11.0 #in case you want to use GPU
